@@ -6,3 +6,4 @@ Learning AI and ML
 2. CNN (Convolution neural network)
 3. NLP (Natural Language Processing)
 4. RNN (Recurrent Neural Network)
+5. Node-red (creating simple web app using node-red and integration with ML model )
