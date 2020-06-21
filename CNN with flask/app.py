@@ -12,7 +12,7 @@ from gevent.pywsgi import WSGIServer
 app = Flask(__name__)
 model = load_model("animal.h5")
 
-@app.route('/')
+@app.route('/')                                                                                                                                                                                                         
 def index():
     return render_template('base.html')
 
