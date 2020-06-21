@@ -4,7 +4,7 @@ from keras.models import load_model
 from keras.preprocessing import image
 import tensorflow as tf
 global graph
-graph = tf.compat.v1.get_default_graph()
+graph = tf.compat.v1.get_default_graph() //corrected this as it was not working from tf to tf.compat.v1
 from flask import Flask , request, render_template
 from werkzeug.utils import secure_filename
 from gevent.pywsgi import WSGIServer
