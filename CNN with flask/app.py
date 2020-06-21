@@ -4,7 +4,7 @@ from keras.models import load_model
 from keras.preprocessing import image
 import tensorflow as tf
 global graph
-graph = tf.get_default_graph()
+graph = tf.compat.v1.get_default_graph()
 from flask import Flask , request, render_template
 from werkzeug.utils import secure_filename
 from gevent.pywsgi import WSGIServer
@@ -46,7 +46,3 @@ if __name__ == '__main__':
     app.run(debug = True, threaded = False)
         
         
-        
-    
-    
-    
